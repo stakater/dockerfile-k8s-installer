@@ -13,22 +13,22 @@ The container accept two environment variables:
 * Install the default components __kube-apiserver kube-controller-manager kube-scheduler, and kubectl__.
 
 ```
-$ docker run --rm -v /opt/bin/kubernetes:/shared xueshanf/install-kubernetes
+$ docker run --rm -v /opt/bin/kubernetes:/shared stakater/k8s-installer
 ```
 
 * Install specific components:
 ```
-$ docker run --env COMPONENTS="kube-apiserver kube-controller-manager kube-scheduler" --rm -v /opt/bin/kubernetes:/shared xueshanf/install-kubernetes
+$ docker run --env COMPONENTS="kube-apiserver kube-controller-manager kube-scheduler" --rm -v /opt/bin/kubernetes:/shared stakater/k8s-installer
 ```
   Or:
 ```
-$ docker run --env COMPONENTS="kubectl" --rm -v /opt/bin/kubernetes:/shared xueshanf/install-kubernetes
+$ docker run --env COMPONENTS="kubectl" --rm -v /opt/bin/kubernetes:/shared stakater/k8s-installer
 ```
 
 * Install specific version:
 
 ```
-$ docker run --env VERSION="v1.4.3" --rm -v /opt/bin/kubernetes:/shared xueshanf/install-kubernetes
+$ docker run --env VERSION="v1.4.3" --rm -v /opt/bin/kubernetes:/shared stakater/k8s-installer
 ```
 
 # Credits
